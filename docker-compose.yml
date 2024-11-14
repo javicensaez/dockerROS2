@@ -12,6 +12,8 @@ services:
 #    - '3478:3478/udp'
 #    - '65534-65535:65534-65535/udp'
     stdin_open: true
+    volumes:
+      - ./SocialTech_ros2_ws:/home/ubuntu/SocialTech_ros2_ws
     tty: true
     deploy:
       resources:
